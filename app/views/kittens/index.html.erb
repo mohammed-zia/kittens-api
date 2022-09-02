@@ -5,7 +5,8 @@
   <p>Age:<%= kitten.age %></p>
   <p>Softness:<%= kitten.softness %></p>
   <p>Cuteness:<%= kitten.cuteness %></p>
-  <%= button_to "Edit kitten", edit_kitten_path(kitten), method: :get%>
+  <%= button_to "Edit kitten", edit_kitten_path(kitten), method: :get %>
+  <%= button_to "Show kitten", kitten, method: :get %>
 <% end %>
 
 <%= button_to "Create a new kitten", new_kitten_path, method: :get %>
