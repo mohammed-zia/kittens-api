@@ -1,0 +1,11 @@
+<h1><%="Details for #{@kitten.name}" %></h1>
+  <p>Name: <%= @kitten.name %></p>
+  <p>Age: <%= @kitten.age %></p>
+  <p>Softness: <%= @kitten.softness %></p>
+  <p>Cuteness: <%= @kitten.cuteness %></p>
+
+<ul>
+  <li><%= button_to "Edit", edit_kitten_path(@kitten), method: :get %></li>
+  <li><%= button_to "Delete this kitten", @kitten, method: :delete %></li>
+  <li><%= button_to "Back to kittens", root_path, method: :get %></li>
+</ul>
